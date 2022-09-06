@@ -129,12 +129,12 @@ List all the Tasks
 
 ```
 USAGE
-  $ todo list [-c <value>] [-x] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+  $ todo list [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
     csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
 
 FLAGS
   -c, --category=<value>  category to filter
-  -x, --completed         list completed tasks
+  -d, --completed         list completed tasks
   -x, --extended          show extra columns
   --columns=<value>       only show provided columns (comma-separated)
   --csv                   output is csv format [alias: --output=csv]
@@ -165,12 +165,12 @@ List all the Tasks
 
 ```
 USAGE
-  $ todo ls [-c <value>] [-x] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+  $ todo ls [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
     csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
 
 FLAGS
   -c, --category=<value>  category to filter
-  -x, --completed         list completed tasks
+  -d, --completed         list completed tasks
   -x, --extended          show extra columns
   --columns=<value>       only show provided columns (comma-separated)
   --csv                   output is csv format [alias: --output=csv]
@@ -488,12 +488,12 @@ List all the Tasks
 
 ```
 USAGE
-  $ todo todos list [-c <value>] [-x] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+  $ todo todos list [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
     csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
 
 FLAGS
   -c, --category=<value>  category to filter
-  -x, --completed         list completed tasks
+  -d, --completed         list completed tasks
   -x, --extended          show extra columns
   --columns=<value>       only show provided columns (comma-separated)
   --csv                   output is csv format [alias: --output=csv]
