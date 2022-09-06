@@ -4,7 +4,7 @@ todo-cli
 A simple but powerful TODO CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/@julianduque/todo-cli)
+[![Version](https://img.shields.io/npm/v/@julianduque/todo-cli)](https://npmjs.org/package/@julianduque/todo-cli)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -246,7 +246,7 @@ ALIASES
   $ todo plugins add
 
 EXAMPLES
-  $ todo plugins:install myplugin 
+  $ todo plugins:install myplugin
 
   $ todo plugins:install https://github.com/someuser/someplugin
 
@@ -306,7 +306,7 @@ ALIASES
   $ todo plugins add
 
 EXAMPLES
-  $ todo plugins:install myplugin 
+  $ todo plugins:install myplugin
 
   $ todo plugins:install https://github.com/someuser/someplugin
 
