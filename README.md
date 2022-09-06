@@ -17,7 +17,7 @@ $ npm install -g @julianduque/todo-cli
 $ todo COMMAND
 running command...
 $ todo (--version)
-@julianduque/todo-cli/0.0.0 darwin-x64 node-v16.17.0
+@julianduque/todo-cli/1.0.0 darwin-x64 node-v16.17.0
 $ todo --help [COMMAND]
 USAGE
   $ todo COMMAND
@@ -246,7 +246,7 @@ ALIASES
   $ todo plugins add
 
 EXAMPLES
-  $ todo plugins:install myplugin
+  $ todo plugins:install myplugin 
 
   $ todo plugins:install https://github.com/someuser/someplugin
 
@@ -306,7 +306,7 @@ ALIASES
   $ todo plugins add
 
 EXAMPLES
-  $ todo plugins:install myplugin
+  $ todo plugins:install myplugin 
 
   $ todo plugins:install https://github.com/someuser/someplugin
 
