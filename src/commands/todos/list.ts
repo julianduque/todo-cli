@@ -13,7 +13,7 @@ export default class TodosList extends Command {
 
   static flags = {
     category: Flags.string({char: 'c', description: 'category to filter'}),
-    completed: Flags.boolean({char: 'x', description: 'list completed tasks'}),
+    completed: Flags.boolean({char: 'd', description: 'list completed tasks'}),
     ...CliUx.ux.table.flags(),
   }
 
