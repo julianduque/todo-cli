@@ -26,7 +26,12 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`todo add [TASK]`](#todo-add-task)
+* [`todo complete [ID]`](#todo-complete-id)
+* [`todo delete [ID]`](#todo-delete-id)
 * [`todo help [COMMAND]`](#todo-help-command)
+* [`todo list`](#todo-list)
+* [`todo ls`](#todo-ls)
 * [`todo plugins`](#todo-plugins)
 * [`todo plugins:install PLUGIN...`](#todo-pluginsinstall-plugin)
 * [`todo plugins:inspect PLUGIN...`](#todo-pluginsinspect-plugin)
@@ -36,6 +41,67 @@ USAGE
 * [`todo plugins:uninstall PLUGIN...`](#todo-pluginsuninstall-plugin-1)
 * [`todo plugins:uninstall PLUGIN...`](#todo-pluginsuninstall-plugin-2)
 * [`todo plugins update`](#todo-plugins-update)
+* [`todo todos add [TASK]`](#todo-todos-add-task)
+* [`todo todos complete [ID]`](#todo-todos-complete-id)
+* [`todo todos delete [ID]`](#todo-todos-delete-id)
+* [`todo todos list`](#todo-todos-list)
+
+## `todo add [TASK]`
+
+Add a new Task
+
+```
+USAGE
+  $ todo add [TASK] [-c <value>]
+
+FLAGS
+  -c, --category=<value>  category to add
+
+DESCRIPTION
+  Add a new Task
+
+ALIASES
+  $ todo add
+
+EXAMPLES
+  $ todo add "Buy milk" --category=shopping
+```
+
+## `todo complete [ID]`
+
+Complete a Task
+
+```
+USAGE
+  $ todo complete [ID]
+
+DESCRIPTION
+  Complete a Task
+
+ALIASES
+  $ todo complete
+
+EXAMPLES
+  $ todo complete 42
+```
+
+## `todo delete [ID]`
+
+Delete a Task
+
+```
+USAGE
+  $ todo delete [ID]
+
+DESCRIPTION
+  Delete a Task
+
+ALIASES
+  $ todo delete
+
+EXAMPLES
+  $ todo delete 42
+```
 
 ## `todo help [COMMAND]`
 
@@ -56,6 +122,78 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.10/src/commands/help.ts)_
+
+## `todo list`
+
+List all the Tasks
+
+```
+USAGE
+  $ todo list [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+    csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
+
+FLAGS
+  -c, --category=<value>  category to filter
+  -d, --completed         list completed tasks
+  -x, --extended          show extra columns
+  --columns=<value>       only show provided columns (comma-separated)
+  --csv                   output is csv format [alias: --output=csv]
+  --filter=<value>        filter property by partial string matching, ex: name=foo
+  --no-header             hide table header from output
+  --no-truncate           do not truncate output to fit screen
+  --output=<option>       output in a more machine friendly format
+                          <options: csv|json|yaml>
+  --sort=<value>          property to sort by (prepend '-' for descending)
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  List all the Tasks
+
+ALIASES
+  $ todo list
+  $ todo ls
+
+EXAMPLES
+  $ todo list --category=shopping --completed
+```
+
+## `todo ls`
+
+List all the Tasks
+
+```
+USAGE
+  $ todo ls [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+    csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
+
+FLAGS
+  -c, --category=<value>  category to filter
+  -d, --completed         list completed tasks
+  -x, --extended          show extra columns
+  --columns=<value>       only show provided columns (comma-separated)
+  --csv                   output is csv format [alias: --output=csv]
+  --filter=<value>        filter property by partial string matching, ex: name=foo
+  --no-header             hide table header from output
+  --no-truncate           do not truncate output to fit screen
+  --output=<option>       output in a more machine friendly format
+                          <options: csv|json|yaml>
+  --sort=<value>          property to sort by (prepend '-' for descending)
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  List all the Tasks
+
+ALIASES
+  $ todo list
+  $ todo ls
+
+EXAMPLES
+  $ todo ls --category=shopping --completed
+```
 
 ## `todo plugins`
 
@@ -285,5 +423,98 @@ FLAGS
 
 DESCRIPTION
   Update installed plugins.
+```
+
+## `todo todos add [TASK]`
+
+Add a new Task
+
+```
+USAGE
+  $ todo todos add [TASK] [-c <value>]
+
+FLAGS
+  -c, --category=<value>  category to add
+
+DESCRIPTION
+  Add a new Task
+
+ALIASES
+  $ todo add
+
+EXAMPLES
+  $ todo todos add "Buy milk" --category=shopping
+```
+
+## `todo todos complete [ID]`
+
+Complete a Task
+
+```
+USAGE
+  $ todo todos complete [ID]
+
+DESCRIPTION
+  Complete a Task
+
+ALIASES
+  $ todo complete
+
+EXAMPLES
+  $ todo todos complete 42
+```
+
+## `todo todos delete [ID]`
+
+Delete a Task
+
+```
+USAGE
+  $ todo todos delete [ID]
+
+DESCRIPTION
+  Delete a Task
+
+ALIASES
+  $ todo delete
+
+EXAMPLES
+  $ todo todos delete 42
+```
+
+## `todo todos list`
+
+List all the Tasks
+
+```
+USAGE
+  $ todo todos list [-c <value>] [-d] [--columns <value> | -x] [--sort <value>] [--filter <value>] [--output
+    csv|json|yaml |  | [--csv | --no-truncate]] [--no-header | ] [--json]
+
+FLAGS
+  -c, --category=<value>  category to filter
+  -d, --completed         list completed tasks
+  -x, --extended          show extra columns
+  --columns=<value>       only show provided columns (comma-separated)
+  --csv                   output is csv format [alias: --output=csv]
+  --filter=<value>        filter property by partial string matching, ex: name=foo
+  --no-header             hide table header from output
+  --no-truncate           do not truncate output to fit screen
+  --output=<option>       output in a more machine friendly format
+                          <options: csv|json|yaml>
+  --sort=<value>          property to sort by (prepend '-' for descending)
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  List all the Tasks
+
+ALIASES
+  $ todo list
+  $ todo ls
+
+EXAMPLES
+  $ todo todos list --category=shopping --completed
 ```
 <!-- commandsstop -->
